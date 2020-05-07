@@ -50,14 +50,8 @@ $EndSheet
 $Sheet
 S 1100 1200 750  650 
 U 5EFFF439
-F0 "USB" 50
+F0 "USB and Power Management" 50
 F1 "USB.sch" 50
-$EndSheet
-$Sheet
-S 1050 2750 950  700 
-U 5EFFF4CB
-F0 "Power Management" 50
-F1 "PowerManagement.sch" 50
 $EndSheet
 $Sheet
 S 3300 2700 500  2300
