@@ -1,0 +1,54 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32L1:STM32L151C8Tx U?
+U 1 1 5EA1569F
+P 5400 3450
+F 0 "U?" H 5400 5231 50  0000 C CNN
+F 1 "STM32L151C8Tx" H 5400 5140 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4900 1950 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00277537.pdf" H 5400 3450 50  0001 C CNN
+	1    5400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:nRF24L01P U?
+U 1 1 5EA16A19
+P 8200 3550
+F 0 "U?" H 8200 4531 50  0000 C CNN
+F 1 "nRF24L01P" H 8200 4440 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm" H 8400 4350 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2726/34069/file/nRF24L01P_Product_Specification_1_0.pdf" H 8200 3650 50  0001 C CNN
+	1    8200 3550
+	1    0    0    -1  
+$EndComp
+Text Label 6450 3750 2    50   ~ 0
+SPI_NSS
+Text Label 6450 3850 2    50   ~ 0
+SPI_SCK
+Text Label 6450 3950 2    50   ~ 0
+SPI_MISO
+Text Label 6450 4050 2    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	6450 3750 6000 3750
+Wire Wire Line
+	6000 3850 6450 3850
+Wire Wire Line
+	6450 3950 6000 3950
+Wire Wire Line
+	6450 4050 6000 4050
+$EndSCHEMATC
