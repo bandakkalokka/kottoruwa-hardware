@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 5
 Title "USB and Power Management"
 Date "2020-05-06"
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B J?
+L Connector:USB_B J3
 U 1 1 5F00EB91
 P 1500 1950
-F 0 "J?" H 1557 2417 50  0000 C CNN
+F 0 "J3" H 1557 2417 50  0000 C CNN
 F 1 "USB_B" H 1557 2326 50  0000 C CNN
 F 2 "" H 1650 1900 50  0001 C CNN
 F 3 " ~" H 1650 1900 50  0001 C CNN
