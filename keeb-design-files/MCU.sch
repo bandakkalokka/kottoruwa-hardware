@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title "MCU and RF"
 Date "2020-05-06"
 Rev ""
@@ -370,9 +370,9 @@ Wire Wire Line
 	4650 1100 4550 1100
 Connection ~ 4550 1100
 Text HLabel 5150 2750 2    50   Input ~ 0
-USB_DM
+USB_D-
 Text HLabel 5150 2850 2    50   Input ~ 0
-USB_DP
+USB_D+
 Wire Wire Line
 	5150 2750 5050 2750
 Wire Wire Line
@@ -1153,4 +1153,24 @@ Wire Wire Line
 	8950 2450 9150 2450
 Wire Wire Line
 	9150 2450 9150 2500
+Text HLabel 5200 1650 2    50   Input ~ 0
+ROW0
+Text HLabel 5200 1750 2    50   Input ~ 0
+ROW1
+Text HLabel 5200 1850 2    50   Input ~ 0
+ROW2
+Text HLabel 5200 1950 2    50   Input ~ 0
+ROW3
+Text HLabel 5200 2050 2    50   Input ~ 0
+ROW4
+Wire Wire Line
+	5050 1650 5200 1650
+Wire Wire Line
+	5050 1750 5200 1750
+Wire Wire Line
+	5050 1850 5200 1850
+Wire Wire Line
+	5050 1950 5200 1950
+Wire Wire Line
+	5050 2050 5200 2050
 $EndSCHEMATC

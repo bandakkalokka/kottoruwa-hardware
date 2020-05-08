@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "USB and Power Management"
 Date "2020-05-06"
 Rev ""
@@ -16,20 +16,345 @@ $EndDescr
 $Comp
 L Connector:USB_B J3
 U 1 1 5F00EB91
-P 1500 1950
-F 0 "J3" H 1557 2417 50  0000 C CNN
-F 1 "USB_B" H 1557 2326 50  0000 C CNN
-F 2 "" H 1650 1900 50  0001 C CNN
-F 3 " ~" H 1650 1900 50  0001 C CNN
-	1    1500 1950
+P 1250 1500
+F 0 "J3" H 1307 1967 50  0000 C CNN
+F 1 "USB_B" H 1307 1876 50  0000 C CNN
+F 2 "" H 1400 1450 50  0001 C CNN
+F 3 " ~" H 1400 1450 50  0001 C CNN
+	1    1250 1500
 	1    0    0    -1  
 $EndComp
-Text HLabel 2350 2050 2    50   Input ~ 0
-USB_DM
-Text HLabel 2350 1950 2    50   Input ~ 0
-USB_DP
+Text HLabel 1750 2150 0    50   Output ~ 0
+USB_D-
+Text HLabel 2850 2150 2    50   Output ~ 0
+USB_D+
+$Comp
+L power:Earth #PWR?
+U 1 1 5EB97A32
+P 1250 2650
+F 0 "#PWR?" H 1250 2400 50  0001 C CNN
+F 1 "Earth" H 1250 2500 50  0001 C CNN
+F 2 "" H 1250 2650 50  0001 C CNN
+F 3 "~" H 1250 2650 50  0001 C CNN
+	1    1250 2650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2350 1950 1800 1950
+	1250 2650 2300 2650
 Wire Wire Line
-	2350 2050 1800 2050
+	2300 2650 2300 2550
+Wire Wire Line
+	1250 1900 1250 2200
+Connection ~ 1250 2650
+Wire Wire Line
+	1150 1900 1150 2200
+Wire Wire Line
+	1150 2200 1250 2200
+Connection ~ 1250 2200
+Wire Wire Line
+	1250 2200 1250 2650
+$Comp
+L Regulator_Switching:NXE2S0505MC U?
+U 1 1 5EB999A6
+P 4650 1500
+F 0 "U?" H 4650 1967 50  0000 C CNN
+F 1 "NXE2S0505MC" H 4650 1876 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_NXE2SxxxxMC_THT" H 4650 1150 50  0001 C CNN
+F 3 "http://power.murata.com/data/power/ncl/kdc_nxe2.pdf" H 4650 1000 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5EB9BCE2
+P 4000 2400
+F 0 "#PWR?" H 4000 2150 50  0001 C CNN
+F 1 "Earth" H 4000 2250 50  0001 C CNN
+F 2 "" H 4000 2400 50  0001 C CNN
+F 3 "~" H 4000 2400 50  0001 C CNN
+	1    4000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2400 4000 2050
+Wire Wire Line
+	4000 1700 4150 1700
+Wire Notes Line width 20
+	700  800  4675 800 
+Wire Notes Line width 20
+	4675 800  4675 2800
+Wire Notes Line width 20
+	4675 2800 700  2800
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 5EBA5B92
+P 2300 2050
+F 0 "U?" H 1975 1675 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 1875 1575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1550 2450 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2500 2400 50  0001 C CNN
+F 4 "C7519" H 2300 2639 50  0001 C CNN "LCSC Part Number"
+	1    2300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1300 2300 1300
+Wire Wire Line
+	2300 1550 2300 1300
+Connection ~ 2300 1300
+Wire Wire Line
+	2300 1300 3000 1300
+Wire Wire Line
+	1550 1600 1800 1600
+Wire Wire Line
+	1800 1600 1800 1950
+Wire Wire Line
+	1550 1500 2800 1500
+Wire Wire Line
+	2800 1500 2800 1950
+Wire Wire Line
+	1800 2150 1750 2150
+Wire Wire Line
+	2800 2150 2850 2150
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5EBAEE92
+P 3000 1500
+F 0 "D?" V 3046 1432 50  0000 R CNN
+F 1 "Y_LED" V 2955 1432 50  0000 R CNN
+F 2 "" V 3000 1500 50  0001 C CNN
+F 3 "~" V 3000 1500 50  0001 C CNN
+F 4 "C72038" V 2955 1432 50  0001 R CNN "LCSC Part Number"
+	1    3000 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EBAFB53
+P 3000 1900
+F 0 "R?" H 3059 1946 50  0000 L CNN
+F 1 "120R" H 3059 1855 50  0000 L CNN
+F 2 "" H 3000 1900 50  0001 C CNN
+F 3 "~" H 3000 1900 50  0001 C CNN
+	1    3000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1400 3000 1300
+Connection ~ 3000 1300
+Wire Wire Line
+	3000 1300 3400 1300
+Wire Wire Line
+	3000 1600 3000 1800
+Wire Wire Line
+	3000 2000 3000 2050
+Wire Wire Line
+	3000 2050 3400 2050
+Connection ~ 4000 2050
+Wire Wire Line
+	4000 2050 4000 1700
+$Comp
+L Device:C_Small C?
+U 1 1 5EBB271C
+P 3400 1700
+F 0 "C?" H 3492 1746 50  0000 L CNN
+F 1 "4.7uF" H 3492 1655 50  0000 L CNN
+F 2 "" H 3400 1700 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1600 3400 1300
+Wire Wire Line
+	3400 1800 3400 2050
+Connection ~ 3400 2050
+Wire Wire Line
+	3400 2050 4000 2050
+$Comp
+L Device:L_Small L?
+U 1 1 5EBB4BD3
+P 3800 1300
+F 0 "L?" V 3985 1300 50  0000 C CNN
+F 1 "15uH" V 3894 1300 50  0000 C CNN
+F 2 "" H 3800 1300 50  0001 C CNN
+F 3 "~" H 3800 1300 50  0001 C CNN
+F 4 "C132136" H 3800 1300 50  0001 C CNN "LCSC Part Number"
+	1    3800 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 1300 4150 1300
+Wire Wire Line
+	3700 1300 3400 1300
+Connection ~ 3400 1300
+$Comp
+L Device:L_Small L?
+U 1 1 5EBB6EF6
+P 5450 1300
+F 0 "L?" V 5635 1300 50  0000 C CNN
+F 1 "22uH" V 5544 1300 50  0000 C CNN
+F 2 "" H 5450 1300 50  0001 C CNN
+F 3 "~" H 5450 1300 50  0001 C CNN
+	1    5450 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EBB76D7
+P 5650 1625
+F 0 "C?" H 5742 1671 50  0000 L CNN
+F 1 "10uF" H 5742 1580 50  0000 L CNN
+F 2 "" H 5650 1625 50  0001 C CNN
+F 3 "~" H 5650 1625 50  0001 C CNN
+	1    5650 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5EBB7CA3
+P 6150 1450
+F 0 "D?" V 6196 1382 50  0000 R CNN
+F 1 "G_LED" V 6105 1382 50  0000 R CNN
+F 2 "" V 6150 1450 50  0001 C CNN
+F 3 "~" V 6150 1450 50  0001 C CNN
+F 4 "C72043" H 6150 1450 50  0001 C CNN "LCSC Part Number"
+	1    6150 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EBB8411
+P 6150 1800
+F 0 "R?" H 6209 1846 50  0000 L CNN
+F 1 "R_Small" H 6209 1755 50  0000 L CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1300 5350 1300
+Wire Wire Line
+	5550 1300 5650 1300
+Wire Wire Line
+	6150 1300 6150 1350
+Wire Wire Line
+	5650 1525 5650 1300
+Connection ~ 5650 1300
+Wire Wire Line
+	5650 1300 6150 1300
+Wire Wire Line
+	5150 1700 5350 1700
+Wire Wire Line
+	5350 1700 5350 2000
+Wire Wire Line
+	5350 2000 5650 2000
+Wire Wire Line
+	6150 2000 6150 1900
+Wire Wire Line
+	6150 1550 6150 1700
+Wire Wire Line
+	5650 1725 5650 2000
+Connection ~ 5650 2000
+Wire Wire Line
+	5650 2000 6150 2000
+$Comp
+L LDO:LD39050P U?
+U 1 1 5EBC09BA
+P 7450 1400
+F 0 "U?" H 7450 1765 50  0000 C CNN
+F 1 "LD39050P" H 7450 1674 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P0.95mm_EP1.7x2.6mm" H 7450 950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/STMicroelectronics-LD39050PU33R_C132827.pdf" H 7450 1250 50  0001 C CNN
+F 4 "C132827" H 7450 1673 50  0001 C CNN "LCSC Part Number"
+	1    7450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EBC166E
+P 5650 2000
+F 0 "#PWR?" H 5650 1750 50  0001 C CNN
+F 1 "GND" H 5655 1827 50  0000 C CNN
+F 2 "" H 5650 2000 50  0001 C CNN
+F 3 "" H 5650 2000 50  0001 C CNN
+	1    5650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1300 6650 1300
+Connection ~ 6150 1300
+Wire Wire Line
+	6150 2000 6650 2000
+Wire Wire Line
+	6950 2000 6950 1400
+Wire Wire Line
+	6950 1400 7100 1400
+Connection ~ 6150 2000
+NoConn ~ 7100 1500
+NoConn ~ 7800 1500
+Wire Wire Line
+	7800 1400 7850 1400
+Wire Wire Line
+	7850 1400 7850 950 
+Wire Wire Line
+	7850 950  6650 950 
+Wire Wire Line
+	6650 950  6650 1300
+Connection ~ 6650 1300
+Wire Wire Line
+	6650 1300 6150 1300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EBC4C75
+P 8150 1200
+F 0 "#PWR?" H 8150 1050 50  0001 C CNN
+F 1 "+3V3" H 8165 1373 50  0000 C CNN
+F 2 "" H 8150 1200 50  0001 C CNN
+F 3 "" H 8150 1200 50  0001 C CNN
+	1    8150 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1200 8150 1300
+Wire Wire Line
+	8150 1300 7800 1300
+$Comp
+L Device:C_Small C?
+U 1 1 5EBCB005
+P 6650 1625
+F 0 "C?" H 6742 1671 50  0000 L CNN
+F 1 "1uF" H 6742 1580 50  0000 L CNN
+F 2 "" H 6650 1625 50  0001 C CNN
+F 3 "~" H 6650 1625 50  0001 C CNN
+	1    6650 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1525 6650 1300
+Wire Wire Line
+	6650 1725 6650 2000
+Connection ~ 6650 2000
+Wire Wire Line
+	6650 2000 6950 2000
+$Comp
+L Device:C_Small C?
+U 1 1 5EBCF2D0
+P 8150 1625
+F 0 "C?" H 8242 1671 50  0000 L CNN
+F 1 "1uF" H 8242 1580 50  0000 L CNN
+F 2 "" H 8150 1625 50  0001 C CNN
+F 3 "~" H 8150 1625 50  0001 C CNN
+	1    8150 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1525 8150 1300
+Connection ~ 8150 1300
+Wire Wire Line
+	8150 1725 8150 2000
+Wire Wire Line
+	8150 2000 6950 2000
+Connection ~ 6950 2000
 $EndSCHEMATC
