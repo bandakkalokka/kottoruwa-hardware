@@ -1,0 +1,3 @@
+[submodule "lib_fp.pretty/MX_Alps_Hybrid"]
+	path = lib_fp.pretty/MX_Alps_Hybrid
+	url = git@github.com:bandakkalokka/MX_Alps_Hybrid.git
