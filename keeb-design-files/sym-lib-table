@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name LDO)(type Legacy)(uri "C:/Users/BEAST/Documents/KiCad Projects/keeb-hardware/lib_sch/LDO.lib")(options "")(descr ""))
+  (lib (name PMIC)(type Legacy)(uri "C:/Users/BEAST/Documents/KiCad Projects/keeb-hardware/lib_sch/PMIC.lib")(options "")(descr ""))
 )
