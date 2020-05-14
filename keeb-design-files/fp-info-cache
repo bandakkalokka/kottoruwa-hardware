@@ -1,4 +1,4 @@
-17274742056137738
+17277920730784815
 Alps_Only
 ALPS-1.5U
 
@@ -76740,3 +76740,17 @@ varistor SIOV
 0
 2
 2
+lib_fp
+SMA_Amphenol_132289_EdgeMount
+http://www.amphenolrf.com/132289.html
+SMA
+0
+5
+2
+lib_fp
+USB-B1HSW6
+USB-B1HSW6
+Connector
+0
+6
+6
