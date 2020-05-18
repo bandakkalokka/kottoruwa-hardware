@@ -1,4 +1,4 @@
-17281100052084740
+17282689792322053
 Alps_Only
 ALPS-1.5U
 
@@ -76745,8 +76745,15 @@ OLED_Display
 Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
 Through hole socket strip THT 1x04 2.54mm single row
 0
+8
 4
-4
+lib_fp
+QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm
+QFN, 16 Pin (https://www.st.com/content/ccc/resource/technical/document/datasheet/4a/50/94/16/69/af/4b/58/DM00047334.pdf/files/DM00047334.pdf/jcr:content/translations/en.DM00047334.pdf), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+21
+17
 lib_fp
 SMA_Amphenol_132289_EdgeMount
 http://www.amphenolrf.com/132289.html
