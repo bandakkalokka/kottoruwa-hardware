@@ -25,14 +25,14 @@ F 4 "C8791" H 8300 2100 50  0001 C CNN "LCSC Part Number"
 	1    8300 2100
 	1    0    0    -1  
 $EndComp
-Text Label 3450 3850 0    50   ~ 0
+Text Label 5250 3050 0    50   ~ 0
 SPI_NSS
-Text Label 3450 3650 0    50   ~ 0
+Text Label 5250 2750 0    50   ~ 0
 SPI_SCK
 Wire Wire Line
-	3450 3850 3850 3850
+	3650 3850 3850 3850
 Wire Wire Line
-	3850 4050 3450 4050
+	3850 4050 3650 4050
 Text Label 7300 1800 0    50   ~ 0
 SPI_SCK
 Text Label 7300 1700 0    50   ~ 0
@@ -280,10 +280,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 3850 5150 3850
 Wire Wire Line
-	3850 3650 3450 3650
+	3850 3650 3700 3650
 Wire Wire Line
-	3850 4150 3450 4150
-Text Label 3450 4150 0    50   ~ 0
+	3850 4150 3650 4150
+Text Label 5250 3350 0    50   ~ 0
 SPI_MOSI
 $Comp
 L power:+3V3 #PWR0109
@@ -718,14 +718,14 @@ Wire Wire Line
 	7550 2100 7700 2100
 Text Label 7550 2100 2    50   ~ 0
 CE
-Text Label 3450 3550 0    50   ~ 0
+Text Label 5250 3150 0    50   ~ 0
 CE
 Wire Wire Line
-	3450 3550 3850 3550
-Text Label 3450 3750 0    50   ~ 0
+	3650 3550 3850 3550
+Text Label 5250 2950 0    50   ~ 0
 IRQ
 Wire Wire Line
-	3450 3750 3850 3750
+	3700 3750 3850 3750
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J1
 U 1 1 5EBCB382
@@ -934,52 +934,50 @@ Wire Wire Line
 	8950 2450 9150 2450
 Wire Wire Line
 	9150 2450 9150 2500
-Text HLabel 3700 2650 0    50   Input ~ 0
+Text HLabel 3650 3450 0    50   Input ~ 0
 ROW0
-Text HLabel 3700 2750 0    50   Input ~ 0
+Text HLabel 3650 3550 0    50   Input ~ 0
 ROW1
-Text HLabel 3700 2850 0    50   Input ~ 0
+Text HLabel 3650 2250 0    50   Input ~ 0
 ROW2
-Text HLabel 3700 2950 0    50   Input ~ 0
+Text HLabel 3650 2350 0    50   Input ~ 0
 ROW3
-Text HLabel 3700 3050 0    50   Input ~ 0
+Text HLabel 3650 2450 0    50   Input ~ 0
 ROW4
-Text HLabel 5250 2650 2    50   Output ~ 0
+Text HLabel 3650 3250 0    50   Output ~ 0
 COL0
-Text HLabel 5250 2750 2    50   Output ~ 0
+Text HLabel 3650 3150 0    50   Output ~ 0
 COL1
-Text HLabel 5250 2850 2    50   Output ~ 0
+Text HLabel 3650 3050 0    50   Output ~ 0
 COL2
-Text HLabel 5250 2950 2    50   Output ~ 0
+Text HLabel 3650 2950 0    50   Output ~ 0
 COL3
-Text HLabel 5250 3050 2    50   Output ~ 0
+Text HLabel 5350 4150 2    50   Output ~ 0
 COL4
-Text HLabel 5250 3150 2    50   Output ~ 0
+Text HLabel 5250 3450 2    50   Output ~ 0
 COL5
-Text HLabel 5250 3250 2    50   Output ~ 0
+Text HLabel 3650 4150 0    50   Output ~ 0
 COL6
-Text HLabel 5250 3350 2    50   Output ~ 0
+Text HLabel 3650 4050 0    50   Output ~ 0
 COL7
-Text HLabel 3650 2250 0    50   Output ~ 0
+Text HLabel 3650 3950 0    50   Output ~ 0
 COL8
-Text HLabel 3650 2350 0    50   Output ~ 0
+Text HLabel 3650 3850 0    50   Output ~ 0
 COL9
-Text HLabel 3650 2450 0    50   Output ~ 0
+Text HLabel 3700 3750 0    50   Output ~ 0
 COL10
-Text HLabel 3700 3150 0    50   Output ~ 0
+Text HLabel 3700 3650 0    50   Output ~ 0
 COL11
-Text HLabel 3700 3250 0    50   Output ~ 0
+Text HLabel 3700 2850 0    50   Output ~ 0
 COL12
-Text HLabel 3700 3350 0    50   Output ~ 0
+Text HLabel 3700 2750 0    50   Output ~ 0
 COL13
-Text HLabel 3700 3450 0    50   Output ~ 0
+Text HLabel 3700 2650 0    50   Output ~ 0
 COL14
 Wire Wire Line
 	5250 2650 5050 2650
 Wire Wire Line
 	5050 2750 5250 2750
-Wire Wire Line
-	5050 2850 5250 2850
 Wire Wire Line
 	5050 2950 5250 2950
 Wire Wire Line
@@ -997,13 +995,13 @@ Wire Wire Line
 Wire Wire Line
 	3850 2450 3650 2450
 Wire Wire Line
-	3850 3150 3700 3150
+	3850 3150 3650 3150
 Wire Wire Line
-	3850 3250 3700 3250
+	3850 3250 3650 3250
 Wire Wire Line
 	3850 3350 3700 3350
 Wire Wire Line
-	3850 3450 3700 3450
+	3850 3450 3650 3450
 Wire Wire Line
 	3700 2650 3850 2650
 Wire Wire Line
@@ -1011,9 +1009,9 @@ Wire Wire Line
 Wire Wire Line
 	3850 2850 3700 2850
 Wire Wire Line
-	3850 2950 3700 2950
+	3850 2950 3650 2950
 Wire Wire Line
-	3850 3050 3700 3050
+	3850 3050 3650 3050
 Wire Notes Line width 20
 	11100 700  6950 700 
 Wire Notes Line width 20
@@ -1110,7 +1108,7 @@ U 1 1 5EA9845B
 P 1050 1450
 F 0 "SW1" V 1096 1402 50  0000 R CNN
 F 1 "RESET" V 1005 1402 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 1050 1650 50  0001 C CNN
+F 2 "lib_fp:SW_SPST_B3S-1000" H 1050 1650 50  0001 C CNN
 F 3 "~" H 1050 1650 50  0001 C CNN
 	1    1050 1450
 	0    -1   -1   0   
@@ -1122,7 +1120,7 @@ NRST
 Wire Wire Line
 	3450 1650 3850 1650
 NoConn ~ 4250 1450
-Text Label 3450 4050 0    50   ~ 0
+Text Label 5250 3250 0    50   ~ 0
 SPI_MISO
 NoConn ~ 3100 6300
 NoConn ~ 3100 6700
@@ -1137,7 +1135,7 @@ U 1 1 5EDF1CDC
 P 2700 1150
 F 0 "SW70" V 2746 1102 50  0000 R CNN
 F 1 "BOOT0" V 2655 1102 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 2700 1350 50  0001 C CNN
+F 2 "lib_fp:SW_SPST_B3S-1000" H 2700 1350 50  0001 C CNN
 F 3 "~" H 2700 1350 50  0001 C CNN
 	1    2700 1150
 	0    -1   -1   0   
@@ -1189,15 +1187,13 @@ Wire Wire Line
 Connection ~ 2700 1400
 Wire Wire Line
 	2700 1400 2700 1350
-NoConn ~ 3850 1850
-NoConn ~ 3850 1950
 Wire Wire Line
 	5350 4150 5050 4150
-Text HLabel 5350 4150 2    50   Output ~ 0
+Text HLabel 5250 2650 2    50   Output ~ 0
 ~CE~
-Text HLabel 3650 3950 0    50   Output ~ 0
+Text HLabel 3650 1850 0    50   Output ~ 0
 EN1
-Text HLabel 5300 3450 2    50   Output ~ 0
+Text HLabel 3650 1950 0    50   Output ~ 0
 EN2
 $Comp
 L Connector_Generic:Conn_01x04 J6
@@ -1259,9 +1255,7 @@ SDA
 Wire Wire Line
 	5050 3650 5500 3650
 Wire Wire Line
-	5050 3450 5300 3450
-Wire Wire Line
-	3650 3950 3850 3950
+	5050 3450 5250 3450
 Text Notes 10100 6350 0    50   ~ 10
 OLED Display Connector
 Wire Notes Line width 20
@@ -1368,4 +1362,13 @@ Wire Notes Line width 20
 	9500 4300 9500 6450
 Text Notes 8550 6350 0    50   ~ 10
 I2C Pull-up Resistors
+Wire Wire Line
+	3650 1850 3850 1850
+Wire Wire Line
+	3650 1950 3850 1950
+Text HLabel 3700 3350 0    50   Output ~ 0
+LED_DIN
+Wire Wire Line
+	3650 3950 3850 3950
+NoConn ~ 5050 2850
 $EndSCHEMATC

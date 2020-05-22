@@ -478,12 +478,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW67
 U 1 1 5EB63425
-P 9200 4000
-F 0 "SW67" H 9200 4285 50  0000 C CNN
-F 1 "PAGE DOWN" H 9200 4194 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-Hotswap" H 9200 4200 50  0001 C CNN
-F 3 "~" H 9200 4200 50  0001 C CNN
-	1    9200 4000
+P 9800 4000
+F 0 "SW67" H 9800 4285 50  0000 C CNN
+F 1 "PAGE DOWN" H 9800 4194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9800 4200 50  0001 C CNN
+F 3 "~" H 9800 4200 50  0001 C CNN
+	1    9800 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -632,12 +632,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW68
 U 1 1 5EB77D9F
-P 9200 5000
-F 0 "SW68" H 9200 5285 50  0000 C CNN
-F 1 "END" H 9200 5194 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-Hotswap" H 9200 5200 50  0001 C CNN
-F 3 "~" H 9200 5200 50  0001 C CNN
-	1    9200 5000
+P 9800 5000
+F 0 "SW68" H 9800 5285 50  0000 C CNN
+F 1 "END" H 9800 5194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9800 5200 50  0001 C CNN
+F 3 "~" H 9800 5200 50  0001 C CNN
+	1    9800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -742,12 +742,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW56
 U 1 1 5EB7C6A7
-P 6800 6000
-F 0 "SW56" H 6800 6285 50  0000 C CNN
-F 1 "RIGHT" H 6800 6194 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-Hotswap" H 6800 6200 50  0001 C CNN
-F 3 "~" H 6800 6200 50  0001 C CNN
-	1    6800 6000
+P 9800 6000
+F 0 "SW56" H 9800 6285 50  0000 C CNN
+F 1 "RIGHT" H 9800 6194 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9800 6200 50  0001 C CNN
+F 3 "~" H 9800 6200 50  0001 C CNN
+	1    9800 6000
 	1    0    0    -1  
 $EndComp
 Text HLabel 1600 1300 1    50   Input ~ 0
@@ -1455,8 +1455,6 @@ Wire Wire Line
 Connection ~ 6400 5000
 Wire Wire Line
 	6400 5000 6400 6000
-Wire Wire Line
-	7000 6000 7000 5000
 Connection ~ 7000 2000
 Wire Wire Line
 	7000 2000 7000 1300
@@ -1466,7 +1464,6 @@ Wire Wire Line
 Connection ~ 7000 4000
 Wire Wire Line
 	7000 4000 7000 3000
-Connection ~ 7000 5000
 Wire Wire Line
 	7000 5000 7000 4000
 Wire Wire Line
@@ -1499,12 +1496,9 @@ Wire Wire Line
 Connection ~ 8800 3000
 Wire Wire Line
 	8800 3000 8800 4000
-Wire Wire Line
-	9400 4000 9400 3000
 Connection ~ 9400 2000
 Wire Wire Line
 	9400 2000 9400 1300
-Connection ~ 9400 3000
 Wire Wire Line
 	9400 3000 9400 2000
 Wire Wire Line
@@ -1515,9 +1509,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 4000 8800 5000
 Connection ~ 8800 4000
-Wire Wire Line
-	9400 4000 9400 5000
-Connection ~ 9400 4000
 Text HLabel 800  3350 0    50   Output ~ 0
 ROW1
 Wire Wire Line
@@ -1719,13 +1710,13 @@ $EndComp
 $Comp
 L Device:D_Small D65
 U 1 1 5ECFF6DC
-P 8950 4250
-F 0 "D65" V 8996 4182 50  0000 R CNN
-F 1 "D_Small" V 8905 4182 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 8950 4250 50  0001 C CNN
-F 3 "~" V 8950 4250 50  0001 C CNN
-F 4 "C151442" H 8950 4250 50  0001 C CNN "LCSC Part Number"
-	1    8950 4250
+P 9600 4250
+F 0 "D65" V 9646 4182 50  0000 R CNN
+F 1 "D_Small" V 9555 4182 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 9600 4250 50  0001 C CNN
+F 3 "~" V 9600 4250 50  0001 C CNN
+F 4 "C151442" H 9600 4250 50  0001 C CNN "LCSC Part Number"
+	1    9600 4250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1772,10 +1763,6 @@ Wire Wire Line
 	8400 4000 8350 4000
 Wire Wire Line
 	8350 4000 8350 4150
-Wire Wire Line
-	9000 4000 8950 4000
-Wire Wire Line
-	8950 4000 8950 4150
 Text HLabel 800  4350 0    50   Output ~ 0
 ROW2
 Wire Wire Line
@@ -1816,9 +1803,6 @@ Wire Wire Line
 Connection ~ 7750 4350
 Wire Wire Line
 	7750 4350 8350 4350
-Connection ~ 8350 4350
-Wire Wire Line
-	8350 4350 8950 4350
 $Comp
 L Device:D_Small D4
 U 1 1 5ED737CD
@@ -1978,19 +1962,15 @@ $EndComp
 $Comp
 L Device:D_Small D66
 U 1 1 5EDE6DEB
-P 8950 5250
-F 0 "D66" V 8996 5182 50  0000 R CNN
-F 1 "D_Small" V 8905 5182 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 8950 5250 50  0001 C CNN
-F 3 "~" V 8950 5250 50  0001 C CNN
-F 4 "C151442" H 8950 5250 50  0001 C CNN "LCSC Part Number"
-	1    8950 5250
+P 9600 5250
+F 0 "D66" V 9646 5182 50  0000 R CNN
+F 1 "D_Small" V 9555 5182 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 9600 5250 50  0001 C CNN
+F 3 "~" V 9600 5250 50  0001 C CNN
+F 4 "C151442" H 9600 5250 50  0001 C CNN "LCSC Part Number"
+	1    9600 5250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9000 5000 8950 5000
-Wire Wire Line
-	8950 5000 8950 5150
 Wire Wire Line
 	8400 5000 8350 5000
 Wire Wire Line
@@ -2084,8 +2064,6 @@ Connection ~ 7750 5350
 Wire Wire Line
 	7750 5350 8350 5350
 Connection ~ 8350 5350
-Wire Wire Line
-	8350 5350 8950 5350
 $Comp
 L Device:D_Small D5
 U 1 1 5EEAD917
@@ -2197,13 +2175,13 @@ $EndComp
 $Comp
 L Device:D_Small D50
 U 1 1 5EF28487
-P 6550 6250
-F 0 "D50" V 6596 6182 50  0000 R CNN
-F 1 "D_Small" V 6505 6182 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 6550 6250 50  0001 C CNN
-F 3 "~" V 6550 6250 50  0001 C CNN
-F 4 "C151442" H 6550 6250 50  0001 C CNN "LCSC Part Number"
-	1    6550 6250
+P 9600 6250
+F 0 "D50" V 9646 6182 50  0000 R CNN
+F 1 "D_Small" V 9555 6182 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 9600 6250 50  0001 C CNN
+F 3 "~" V 9600 6250 50  0001 C CNN
+F 4 "C151442" H 9600 6250 50  0001 C CNN "LCSC Part Number"
+	1    9600 6250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -2242,10 +2220,6 @@ Wire Wire Line
 	6000 6000 5950 6000
 Wire Wire Line
 	5950 6000 5950 6150
-Wire Wire Line
-	6600 6000 6550 6000
-Wire Wire Line
-	6550 6000 6550 6150
 Text HLabel 800  6350 0    50   Output ~ 0
 ROW4
 Wire Wire Line
@@ -2276,5 +2250,25 @@ Wire Wire Line
 	5350 6350 5950 6350
 Connection ~ 5950 6350
 Wire Wire Line
-	5950 6350 6550 6350
+	10000 3000 10000 4000
+Connection ~ 10000 3000
+Wire Wire Line
+	9600 4150 9600 4000
+Wire Wire Line
+	8350 4350 9600 4350
+Connection ~ 8350 4350
+Wire Wire Line
+	8350 5350 9600 5350
+Wire Wire Line
+	9600 5150 9600 5000
+Wire Wire Line
+	10000 4000 10000 5000
+Connection ~ 10000 4000
+Wire Wire Line
+	10000 5000 10000 6000
+Connection ~ 10000 5000
+Wire Wire Line
+	9600 6000 9600 6150
+Wire Wire Line
+	5950 6350 9600 6350
 $EndSCHEMATC
