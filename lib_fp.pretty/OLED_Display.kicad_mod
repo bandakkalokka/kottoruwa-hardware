@@ -1,4 +1,4 @@
-(module OLED_Display (layer F.Cu) (tedit 5EC055CD)
+(module OLED_Display (layer F.Cu) (tedit 5EC80442)
   (descr "Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
   (tags "Through hole socket strip THT 1x04 2.54mm single row")
   (fp_text reference REF** (at 0.254 2.794 180) (layer F.SilkS)
@@ -45,5 +45,10 @@
     (offset (xyz -3.75 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
+  )
+  (model "C:/Users/BEAST/Documents/KiCad Projects/keeb-hardware/3d_models/0.96 OLED v3.step"
+    (offset (xyz 0 -12.75 3))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
   )
 )

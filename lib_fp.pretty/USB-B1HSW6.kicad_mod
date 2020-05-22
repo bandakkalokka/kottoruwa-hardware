@@ -1,13 +1,13 @@
-(module "USB-B1HSW6" (layer F.Cu)
-  (descr "USB-B1HSW6")
-  (tags "Connector")
+(module USB-B1HSW6 (layer F.Cu) (tedit 5EC802C9)
+  (descr USB-B1HSW6)
+  (tags Connector)
   (fp_text reference J** (at -0.46354 0.85786) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
-  (fp_text user %R (at -0.46354 0.85786) (layer F.Fab)
+  (fp_text value USB-B1HSW6 (at -0.46354 0.85786) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
-  (fp_text value "USB-B1HSW6" (at -0.46354 0.85786) (layer F.SilkS) hide
+  (fp_text user %R (at -0.46354 0.85786) (layer F.Fab)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
   (fp_line (start -6.05 -6.2) (end 6.05 -6.2) (layer F.Fab) (width 0.254))
@@ -27,4 +27,9 @@
   (pad 4 thru_hole circle (at 1.25 -2.71) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask))
   (pad 5 thru_hole circle (at -6.02 0) (size 3.5 3.5) (drill 2.41) (layers *.Cu *.Mask))
   (pad 6 thru_hole circle (at 6.02 0) (size 3.5 3.5) (drill 2.41) (layers *.Cu *.Mask))
+  (model "C:/Users/BEAST/Documents/KiCad Projects/keeb-hardware/3d_models/c-292304-1-b-3d.igs"
+    (offset (xyz 0 -10 5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
