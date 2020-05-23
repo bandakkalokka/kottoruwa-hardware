@@ -950,7 +950,7 @@ Text HLabel 3650 3150 0    50   Output ~ 0
 COL1
 Text HLabel 3650 3050 0    50   Output ~ 0
 COL2
-Text HLabel 3650 2950 0    50   Output ~ 0
+Text HLabel 2700 2950 0    50   Output ~ 0
 COL3
 Text HLabel 5350 4150 2    50   Output ~ 0
 COL4
@@ -1009,7 +1009,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 2850 3700 2850
 Wire Wire Line
-	3850 2950 3650 2950
+	3850 2950 3050 2950
 Wire Wire Line
 	3850 3050 3650 3050
 Wire Notes Line width 20
@@ -1122,8 +1122,6 @@ Wire Wire Line
 NoConn ~ 4250 1450
 Text Label 5250 3250 0    50   ~ 0
 SPI_MISO
-NoConn ~ 3100 6300
-NoConn ~ 3100 6700
 NoConn ~ 3100 6800
 Text Label 3450 2050 0    50   ~ 0
 BOOT0
@@ -1371,4 +1369,21 @@ LED_DIN
 Wire Wire Line
 	3650 3950 3850 3950
 NoConn ~ 5050 2850
+Text Label 3300 6700 0    50   ~ 0
+SWO
+Wire Wire Line
+	3300 6700 3100 6700
+Text Label 2700 3100 2    50   ~ 0
+SWO
+Wire Wire Line
+	2700 3100 3050 3100
+Wire Wire Line
+	3050 3100 3050 2950
+Connection ~ 3050 2950
+Wire Wire Line
+	3050 2950 2700 2950
+Text Label 3300 6300 0    50   ~ 0
+NRST
+Wire Wire Line
+	3300 6300 3100 6300
 $EndSCHEMATC
