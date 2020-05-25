@@ -153,4 +153,48 @@ Wire Wire Line
 	3600 2200 3600 1900
 Wire Wire Line
 	3600 1900 3800 1900
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5ECAF7EB
+P 8500 6000
+F 0 "H4" H 8600 6046 50  0000 L CNN
+F 1 "MountingHole" H 8600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 8500 6000 50  0001 C CNN
+F 3 "~" H 8500 6000 50  0001 C CNN
+	1    8500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5ECB0190
+P 8000 6000
+F 0 "H3" H 8100 6046 50  0000 L CNN
+F 1 "MountingHole" H 8100 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 8000 6000 50  0001 C CNN
+F 3 "~" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5ECB0231
+P 7500 6000
+F 0 "H2" H 7600 6046 50  0000 L CNN
+F 1 "MountingHole" H 7600 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 7500 6000 50  0001 C CNN
+F 3 "~" H 7500 6000 50  0001 C CNN
+	1    7500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5ECB02DE
+P 7000 6000
+F 0 "H1" H 7100 6046 50  0000 L CNN
+F 1 "MountingHole" H 7100 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4" H 7000 6000 50  0001 C CNN
+F 3 "~" H 7000 6000 50  0001 C CNN
+	1    7000 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
