@@ -56,10 +56,8 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
+* [Project Structure](#project-structure)
+* [Prerequisites](#prerequisites)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -85,58 +83,35 @@ Of course, no one template will serve all projects since your needs may be diffe
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [KiCAD](https://docs.kicad-pcb.org/5.0/en/kicad/kicad.html)
+* [QMK](https://qmk.fm/)
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Project Structure
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+* 3d_models - .STEP and .WRL model files for all footprints
+* datasheets - data sheets for components used
+* gerbers - final production files
+* images - SVG images and 3D board renders
+* keeb-design-files - .pro, .sch and other KiCAD files
+* lib_fp.pretty - footprints
+* lib_sch - schematic symbols
+* pdf - schematics, board layouts, dimension drawings
+
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+* KICAD (EESchema, PcbNew)
+* PDF Viewer
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/bandakkalokka/kottoruwa-hardware/issues) for a list of proposed features (and known issues).
 
 
 
@@ -156,49 +131,38 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+rb28z2        - [@rb28z2](https://github.com/rb28z2) 
+bandakkalokka - [@bandakkalokka](https://github.com/bandakkalokka)
+Project Link: [https://github.com/bandakkalokka/kottoruwa-hardware](https://github.com/bandakkalokka/kottoruwa-hardware)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+## 
 
-
+* [QMK](https://github.com/qmk/qmk_firmware)
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/bandakkalokka/kottoruwa-hardware.svg?style=flat-square
+[contributors-url]: https://github.com/bandakkalokka/kottoruwa-hardware/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bandakkalokka/kottoruwa-hardware.svg?style=flat-square
+[forks-url]: https://github.com/bandakkalokka/kottoruwa-hardware/network/members
+[stars-shield]: https://img.shields.io/github/stars/bandakkalokka/kottoruwa-hardware.svg?style=flat-square
+[stars-url]: https://github.com/bandakkalokka/kottoruwa-hardware/stargazers
+[issues-shield]: https://img.shields.io/github/issues/bandakkalokka/kottoruwa-hardware.svg?style=flat-square
+[issues-url]: https://github.com/bandakkalokka/kottoruwa-hardware/issues
+[license-shield]: https://img.shields.io/github/license/bandakkalokka/kottoruwa-hardware.svg?style=flat-square
+[license-url]: https://github.com/bandakkalokka/kottoruwa-hardware/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/chathula-adikary-908450168/
 [product-screenshot]: images/keeb-img.jpg
