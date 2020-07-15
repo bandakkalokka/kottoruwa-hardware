@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\BEAST\Documents\KiCad Projects\keeb-hardware\keeb-design-files\keeb.sch</source>
-    <date>2020-05-25 9:48:50 AM</date>
+    <date>2020-05-26 8:04:02 AM</date>
     <tool>Eeschema (5.1.5)-3</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1545,7 +1545,7 @@
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC Part Number">C25726</field>
+        <field name="LCSC Part Number">C11702</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/USB and Power Management/" tstamps="/5EFFF439/"/>
@@ -1715,7 +1715,7 @@
     </comp>
     <comp ref="U7">
       <value>LD39050P</value>
-      <footprint>Package_DFN_QFN:DFN-6-1EP_3x3mm_P0.95mm_EP1.7x2.6mm</footprint>
+      <footprint>lib_fp:DFN-6-1EP_3x3mm_P0.95mm_EP1.7x2.6mm</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/STMicroelectronics-LD39050PU33R_C132827.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C132827</field>
@@ -1747,7 +1747,7 @@
     </comp>
     <comp ref="D69">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1758,7 +1758,7 @@
     </comp>
     <comp ref="D74">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1769,7 +1769,7 @@
     </comp>
     <comp ref="D76">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1780,7 +1780,7 @@
     </comp>
     <comp ref="D78">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1791,7 +1791,7 @@
     </comp>
     <comp ref="D81">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1802,7 +1802,7 @@
     </comp>
     <comp ref="D82">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1813,7 +1813,7 @@
     </comp>
     <comp ref="D83">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1824,7 +1824,7 @@
     </comp>
     <comp ref="D80">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1835,7 +1835,7 @@
     </comp>
     <comp ref="D79">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1846,7 +1846,7 @@
     </comp>
     <comp ref="D77">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1857,7 +1857,7 @@
     </comp>
     <comp ref="D75">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>
@@ -1868,7 +1868,7 @@
     </comp>
     <comp ref="D73">
       <value>WS2812B</value>
-      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <footprint>lib_fp:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
       <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
       <fields>
         <field name="LCSC Part Number">C114586</field>

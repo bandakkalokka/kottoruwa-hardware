@@ -1,4 +1,4 @@
-17285871379473432
+17289052310632250
 Alps_Only
 ALPS-1.5U
 
@@ -76741,12 +76741,26 @@ varistor SIOV
 2
 2
 lib_fp
+DFN-6-1EP_3x3mm_P0.95mm_EP1.7x2.6mm
+DFN6 3*3 MM, 0.95 PITCH; CASE 506AH-01 (see ON Semiconductor 506AH.PDF)
+DFN 0.95
+0
+13
+7
+lib_fp
 JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal
 JST PH series connector, S2B-PH-SM4-TB (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf), generated with kicad-footprint-generator
 connector JST PH top entry
 0
 4
 3
+lib_fp
+LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+LED RGB NeoPixel
+0
+4
+4
 lib_fp
 OLED_Display
 Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
